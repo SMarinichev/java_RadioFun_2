@@ -7,13 +7,13 @@ import static org.junit.jupiter.api.Assertions.*;
 public class RadioTest {
 
     @Test
-    public void shouldSetQuantityStation() {
+    void shouldSetQuantityStation() {
         Radio radio = new Radio(50);
         assertEquals(50, radio.getQuantityStation());
     }
 
     @Test
-    public void shouldSetQuantityStationDefault() {
+    void shouldSetQuantityStationDefault() {
         Radio radio = new Radio();
         assertEquals(10, radio.getQuantityStation());
     }
@@ -101,7 +101,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldCurrentVolumeOverMax() {
+    void shouldCurrentVolumeOverMax() {
         Radio radio = new Radio();
 
         radio.setCurrentVolume(113);
@@ -111,7 +111,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldVolumeIncrease() {
+    void shouldVolumeIncrease() {
         Radio radio = new Radio();
 
         radio.setCurrentVolume(13);
@@ -121,7 +121,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldVolumeIncreaseMax() {
+    void shouldVolumeIncreaseMax() {
         Radio radio = new Radio();
 
         radio.setCurrentVolume(99);
@@ -131,7 +131,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldVolumeOverMax() {
+    void shouldVolumeOverMax() {
         Radio radio = new Radio();
 
         radio.setCurrentVolume(100);
@@ -141,7 +141,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldDecreaseVolume() {
+    void shouldDecreaseVolume() {
         Radio radio = new Radio();
 
         radio.setCurrentVolume(13);
@@ -151,7 +151,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldVolumeBelowMin() {
+    void shouldVolumeBelowMin() {
         Radio radio = new Radio();
 
         radio.setCurrentVolume(0);
@@ -161,7 +161,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldCurrentVolumeOverMin() {
+    void shouldCurrentVolumeOverMin() {
         Radio radio = new Radio();
 
         radio.setCurrentVolume(-13);
